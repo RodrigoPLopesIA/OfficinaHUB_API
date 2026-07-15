@@ -18,7 +18,7 @@ jobs:
                   java-version: '21'
                   cache: 'gradle'
             - name: Build with Gradle
-              run: ./gradlew build
+              run: ./gradlew assemble
     test:
         runs-on: ubuntu-latest
         needs: build
